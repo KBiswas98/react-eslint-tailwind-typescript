@@ -25,6 +25,7 @@
         "no-console":"error",
         "react/boolean-prop-naming": ["error", { "rule": "^{is|has|are}[A-Z]([A-Za-z0-9]?)+"}],
         "no-use-before-define": "off",
-        "no-empty-pattern": "off"
+        "no-empty-pattern": "off",
+        "no-unused-vars": "off"
     }
 }

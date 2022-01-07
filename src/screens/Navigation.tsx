@@ -1,5 +1,5 @@
-import React, { lazy, Suspense, useEffect } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React, { Suspense, useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './home/Home'
 
 export default function Navigation() {
@@ -10,9 +10,9 @@ export default function Navigation() {
 		<>
 			<Router>
 				<Suspense fallback={<div>loading...</div>}>
-					<Switch>
-						<Route path={'/'} exact component={Home} />
-					</Switch>
+					<Routes>
+						<Route path={'/'} element={<Home />} />
+					</Routes>
 				</Suspense>
 			</Router>
 		</>

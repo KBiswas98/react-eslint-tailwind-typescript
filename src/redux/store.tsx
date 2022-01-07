@@ -6,6 +6,12 @@ import rootReducer from './reducers'
 import Navigation from '../screens/Navigation'
 import thunk from 'redux-thunk'
 
+declare global {
+    interface Window {
+      __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
+    }
+}
+
 /* eslint-disable no-underscore-dangle */
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ as typeof compose || compose;
 
